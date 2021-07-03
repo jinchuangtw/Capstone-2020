@@ -1,5 +1,3 @@
-# Capstone-2020 README
-
 ### Prerequisites
 1. PX4-Autopilot v1.10 Download ->
 ```git clone https://github.com/PX4/Firmware```
