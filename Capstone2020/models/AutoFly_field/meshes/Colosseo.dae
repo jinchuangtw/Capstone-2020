@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.91.0 commit date:2020-11-25, commit time:08:34, hash:0f45cab862b8</authoring_tool>
+    </contributor>
+    <created>2021-06-01T00:38:39</created>
+    <modified>2021-06-01T00:38:39</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="L_shaped_7x7_1-effect">
+      <profile_COMMON>
+        <newparam sid="L_shaped_7x7_1_png-surface">
+          <surface type="2D">
+            <init_from>L_shaped_7x7_1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="L_shaped_7x7_1_png-sampler">
+          <sampler2D>
+            <source>L_shaped_7x7_1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="L_shaped_7x7_1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="L_shaped_7x7_0-effect">
+      <profile_COMMON>
+        <newparam sid="L_shaped_7x7_0_png-surface">
+          <surface type="2D">
+            <init_from>L_shaped_7x7_0_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="L_shaped_7x7_0_png-sampler">
+          <sampler2D>
+            <source>L_shaped_7x7_0_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="L_shaped_7x7_0_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ground1-effect">
+      <profile_COMMON>
+        <newparam sid="ground1_jpg-surface">
+          <surface type="2D">
+            <init_from>ground1_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ground1_jpg-sampler">
+          <sampler2D>
+            <source>ground1_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="ground1_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="L_shaped_7x7_0_png" name="L_shaped_7x7_0_png">
+      <init_from>L_shaped_7x7_0.png</init_from>
+    </image>
+    <image id="L_shaped_7x7_1_png" name="L_shaped_7x7_1_png">
+      <init_from>L_shaped_7x7_1.png</init_from>
+    </image>
+    <image id="ground1_jpg" name="ground1_jpg">
+      <init_from>ground1.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="L_shaped_7x7_1-material" name="L_shaped_7x7_1">
+      <instance_effect url="#L_shaped_7x7_1-effect"/>
+    </material>
+    <material id="L_shaped_7x7_0-material" name="L_shaped_7x7_0">
+      <instance_effect url="#L_shaped_7x7_0-effect"/>
+    </material>
+    <material id="ground1-material" name="ground1">
+      <instance_effect url="#ground1-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="L_shaped_7x7_1-mesh" name="L_shaped_7x7_1">
+      <mesh>
+        <source id="L_shaped_7x7_1-mesh-positions">
+          <float_array id="L_shaped_7x7_1-mesh-positions-array" count="12">-24.935 -0.5 0 24.935 -0.5 0 -24.935 0.5 0 24.935 0.5 0</float_array>
+          <technique_common>
+            <accessor source="#L_shaped_7x7_1-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="L_shaped_7x7_1-mesh-normals">
+          <float_array id="L_shaped_7x7_1-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#L_shaped_7x7_1-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="L_shaped_7x7_1-mesh-map-0">
+          <float_array id="L_shaped_7x7_1-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#L_shaped_7x7_1-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="L_shaped_7x7_1-mesh-vertices">
+          <input semantic="POSITION" source="#L_shaped_7x7_1-mesh-positions"/>
+        </vertices>
+        <triangles material="L_shaped_7x7_1-material" count="2">
+          <input semantic="VERTEX" source="#L_shaped_7x7_1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#L_shaped_7x7_1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#L_shaped_7x7_1-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="L_shaped_7x7_0-mesh" name="L_shaped_7x7_0">
+      <mesh>
+        <source id="L_shaped_7x7_0-mesh-positions">
+          <float_array id="L_shaped_7x7_0-mesh-positions-array" count="12">-24.935 -0.5 0 24.935 -0.5 0 -24.935 0.5 0 24.935 0.5 0</float_array>
+          <technique_common>
+            <accessor source="#L_shaped_7x7_0-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="L_shaped_7x7_0-mesh-normals">
+          <float_array id="L_shaped_7x7_0-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#L_shaped_7x7_0-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="L_shaped_7x7_0-mesh-map-0">
+          <float_array id="L_shaped_7x7_0-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#L_shaped_7x7_0-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="L_shaped_7x7_0-mesh-vertices">
+          <input semantic="POSITION" source="#L_shaped_7x7_0-mesh-positions"/>
+        </vertices>
+        <triangles material="L_shaped_7x7_0-material" count="2">
+          <input semantic="VERTEX" source="#L_shaped_7x7_0-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#L_shaped_7x7_0-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#L_shaped_7x7_0-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="ground1-mesh" name="ground1">
+      <mesh>
+        <source id="ground1-mesh-positions">
+          <float_array id="ground1-mesh-positions-array" count="12">-0.5 -0.5 0 0.5 -0.5 0 -0.5 0.5 0 0.5 0.5 0</float_array>
+          <technique_common>
+            <accessor source="#ground1-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ground1-mesh-normals">
+          <float_array id="ground1-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ground1-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ground1-mesh-map-0">
+          <float_array id="ground1-mesh-map-0-array" count="12">1 0 0 1 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#ground1-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ground1-mesh-vertices">
+          <input semantic="POSITION" source="#ground1-mesh-positions"/>
+        </vertices>
+        <triangles material="ground1-material" count="2">
+          <input semantic="VERTEX" source="#ground1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ground1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ground1-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="L_shaped_7x7_1" name="L_shaped_7x7_1" type="NODE">
+        <matrix sid="transform">-6.11802e-9 -0.14 0 6.84 0.1399639 -6.11959e-9 0 4.18 0 0 1 0.01 0 0 0 1</matrix>
+        <instance_geometry url="#L_shaped_7x7_1-mesh" name="L_shaped_7x7_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="L_shaped_7x7_1-material" target="#L_shaped_7x7_1-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="L_shaped_7x7_0" name="L_shaped_7x7_0" type="NODE">
+        <matrix sid="transform">0.1399639 0 0 3.42 0 0.14 0 0 0 0 1 0.01 0 0 0 1</matrix>
+        <instance_geometry url="#L_shaped_7x7_0-mesh" name="L_shaped_7x7_0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="L_shaped_7x7_0-material" target="#L_shaped_7x7_0-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="ground1" name="ground1" type="NODE">
+        <matrix sid="transform">20 0 0 0 0 20 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#ground1-mesh" name="ground1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ground1-material" target="#ground1-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

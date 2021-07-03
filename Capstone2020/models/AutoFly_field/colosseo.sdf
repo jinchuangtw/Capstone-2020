@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="colosseo">
+    <static>true</static>
+    <link name="colosseo_link">
+        <collision name="colosseo_collision">  
+         <geometry>
+            <box>
+                <size>0.0 0.0 0.0</size>
+            </box>
+        </geometry>
+      </collision>
+      
+      <visual name="colosseo_mesh">
+        <cast_shadows>0</cast_shadows>
+        <geometry>
+            <mesh>
+                <uri>model://AutoFly_field/meshes/Colosseo.dae</uri>
+            </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
